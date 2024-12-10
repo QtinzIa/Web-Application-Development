@@ -1,0 +1,56 @@
+{
+    "fruits": [
+        {
+            "id": "1",
+            "name": "Apple",
+            "category": "fruit"
+        },
+        {
+            "id": "2",
+            "name": "Banana",
+            "category": "fruit"
+        },
+        {
+            "id": "3",
+            "name": "Orange",
+            "category": "fruit"
+        },
+        {
+            "id": "4",
+            "name": "Strawberry",
+            "category": "fruit"
+        },
+        {
+            "id": "5",
+            "name": "Watermellon",
+            "category": "fruit"
+        }
+    ],
+    "vegetables": [
+        {
+            "id": "6",
+            "name": "Potato",
+            "category": "vegetable"
+        },
+        {
+            "id": "7",
+            "name": "Tomato",
+            "category": "vegetable"
+        },
+        {
+            "id": "8",
+            "name": "Cucumber",
+            "category": "vegetable"
+        },
+        {
+            "id": "9",
+            "name": "Cabbage",
+            "category": "vegetable"
+        },
+        {
+            "id": "10",
+            "name": "Onion",
+            "category": "vegetable"
+        }
+    ]
+}

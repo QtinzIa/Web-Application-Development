@@ -1,0 +1,11 @@
+.inventory-item {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    transition: transform 0.05s ease;
+}
+
+.inventory-item:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,44 @@
+{
+  "items": [
+      {
+          "sku": "001",
+          "name": "Pineapple",
+          "qty": 10,
+          "price": 2.5,
+          "description": "Delight in the tropical sweetness and tang of fresh pineapples!",
+          "image": "/images/pineapple.png"
+      },
+      {
+          "sku": "002",
+          "name": "Watermelon",
+          "qty": 8,
+          "price": 1.5,
+          "description": "Savor refreshing, hydrating watermelons, ideal for summer days!",
+          "image": "/images/watermelon.png"
+      },
+      {
+          "sku": "003",
+          "name": "Lemon",
+          "qty": 30,
+          "price": 0.8,
+          "description": "Add a burst of tangy freshness to your drinks and dishes!",
+          "image": "/images/lemon.png"
+      },
+      {
+          "sku": "004",
+          "name": "Blueberry",
+          "qty": 15,
+          "price": 3.7,
+          "description": "Enjoy the rich, juicy flavor of these antioxidant-packed berries!",
+          "image": "/images/blueberry.png"
+      },
+      {
+          "sku": "005",
+          "name": "Apple",
+          "qty": 50,
+          "price": 1,
+          "description": "Experience the crisp and sweet delight, perfect for snacking or baking!",
+          "image": "/images/apple.png"
+      }
+  ]
+}

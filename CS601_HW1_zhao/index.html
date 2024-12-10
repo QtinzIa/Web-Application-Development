@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Form with JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <form id="subscriptionForm">
+        <h1>Subscription to Newsletter</h1>
+
+        <div class="form-group">
+            <label for="fName">First Name:</label>
+            <input type="text" id="fName">
+        </div>
+
+        <div class="form-group">
+            <label for="lName">Last Name:</label>
+            <input type="text" id="lName">
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+        </div>
+        
+        <div class="form-group">
+            <label for="package">Package:</label>
+            <select id="package">
+                <option value="">Option</option>
+                <option value="Bronze">Bronze</option>
+                <option value="Silver">Silver</option>
+                <option value="Gold">Gold</option>
+                <option value="Platinum">Platinum</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" id="subscribe">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+        
+        <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+        
+    </form>
+
+    <!-- showing error message -->
+    <div id="error"></div>
+    <!-- showing success message -->
+    <div id="success"></div>
+
+</body>
+</html>

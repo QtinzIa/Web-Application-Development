@@ -1,0 +1,202 @@
+body {
+    font-family: Comic Sans MS, cursive;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+body.no-sidebar {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: 1fr;
+}
+
+header{
+    background:
+        #333;
+        /* url('assets/head.gif'); */
+    /* background-size: contain;
+    background-position: 97% top;
+    background-repeat: no-repeat; */
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+footer{
+    background:
+        #333
+        url('assets/footer.png');
+    background-size: 20%;
+    background-position: center 80%;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1em;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;  /* Remove underline */
+    transition: color 0.3s;
+}
+
+nav a:link, nav a:visited {
+    color: #ffffff; /* Same color for unvisited and visited links */
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+aside {
+    background:
+        #c7c7c7
+        url('assets/back.gif');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    grid-area: aside;
+    padding: 1em;
+}
+
+main {
+    grid-area: main;
+    padding: 1em;
+    background: #e8e8e8;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    margin: 2em auto;
+    width: 90%;
+}
+
+.project {
+    background: white;
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
+    height: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project > h3 {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.project h3 + p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5em;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Pseudo-element and Pseudo-class */
+.project::before {
+    content: "👾";
+    margin-right: 5px;
+}
+
+.project[data-catagory = "music"]::before {
+    content: "🎵";
+    margin-right: 5px;
+}
+
+a[href*="linkedin.com"]::after,
+a[href ="https://github.com/QtinzIa"]::after,
+a[href*="instagram.com"]::after {
+    content: "👉🏻";
+    margin-left: 5px;
+}
+
+a:link, a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    color: #3498db;
+}
+
+@media (min-width: 768px) {
+    body {
+        grid-template-areas:
+            "header header"
+            "aside main"
+            "footer footer";
+        grid-template-columns: 300px 1fr;
+    }
+
+    aside {
+        padding: 2em;
+    }
+
+    main {
+        padding: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        background-size: 50%; /* Reduce the size of the GIF */
+        background-position: center top; /* Center it horizontally */
+        padding: 2em 1em; /* Adjust padding for smaller screens */
+    }
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        background-size: 70%; /* Reduce the size of the GIF */
+        background-position: center top; /* Center it horizontally */
+        padding: 3em 1em; /* Adjust padding for smaller screens */
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}

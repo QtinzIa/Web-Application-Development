@@ -1,0 +1,39 @@
+.App {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.App-header {
+    background-color: #fcdd8a;
+    padding: 10px;
+    color: white;
+}
+
+.store-logo {
+    max-width: 100px;
+    margin-top: 10px;
+}
+
+.App-main {
+    flex: 1;
+}
+
+.inventory-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer.App-footer {
+    background-color: #fcdd8a;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+

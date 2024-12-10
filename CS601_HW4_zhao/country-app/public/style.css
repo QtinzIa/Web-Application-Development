@@ -1,0 +1,73 @@
+body {
+    font-family: Comic Sans MS, cursive;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+
+header{
+    background:
+        #333;
+    color: white;
+    padding: 1.5em;
+    text-align: center;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+footer{
+    background:
+        #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1em;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;  /* Remove underline */
+    transition: color 0.3s;
+}
+
+nav a:link, nav a:visited {
+    color: #ffffff; /* Same color for unvisited and visited links */
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+main {
+    grid-area: main;
+    padding: 1em;
+    background: #e8e8e8;
+}
+
+footer {
+    grid-area: footer;
+}
+
+

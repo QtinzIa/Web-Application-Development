@@ -1,0 +1,9 @@
+{
+    "items": [
+      { "sku": "001", "name": "Apples", "qty": 50, "price": 0.5 },
+      { "sku": "002", "name": "Bananas", "qty": 30, "price": 0.3 },
+      { "sku": "003", "name": "Oranges", "qty": 40, "price": 0.7 },
+      { "sku": "004", "name": "Tomatoes", "qty": 20, "price": 1.0 },
+      { "sku": "005", "name": "Potatoes", "qty": 60, "price": 0.4 }
+    ]
+  }
