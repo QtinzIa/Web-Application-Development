@@ -1,0 +1,79 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App-header,
+.App-footer {
+  background-color: #e0e9f5;
+  color: rgb(44, 111, 255);
+  padding: 1em;
+}
+
+.App-main {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url('/public/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2em;
+}
+
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 900px;
+  margin: auto;
+  gap: 2em;
+}
+
+.selfie {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+
+.intro-text {
+  font-size: 1.1em;
+  color: #333;
+  text-align: left;
+}
+
+.intro-text h2 {
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: auto;
+}

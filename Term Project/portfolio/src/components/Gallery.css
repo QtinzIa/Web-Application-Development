@@ -1,0 +1,89 @@
+.gallery-container {
+    padding: 2em;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.gallery-container h1 {
+    font-size: 2em;
+    color: rgb(44, 111, 255);
+    margin-bottom: 1em;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.image-container {
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    color: rgb(44, 111, 255);
+    font-size: 2em;
+    cursor: pointer;
+    padding: 0.5em;
+    transition: color 0.3s ease;
+}
+
+.arrow:hover {
+    color: rgb(30, 90, 200);
+}
+
+.arrow-left {
+    position: absolute;
+    left: -2em;
+}
+
+.arrow-right {
+    position: absolute;
+    right: -2em;
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.lightbox-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

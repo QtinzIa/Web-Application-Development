@@ -1,0 +1,51 @@
+.contact-container {
+    padding: 2em;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(26, 56, 122, 0.658);
+}
+
+.contact-container h2 {
+    font-size: 2em;
+    color: rgb(44, 111, 255);
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.contact-content {
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: left;
+    color: #333;
+}
+
+.contact-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-container ul li {
+    margin-left: 8em;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.contact-container ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-container ul li a:hover {
+    color: #003399;
+}
+
+a[href*="mailto"]::after,
+a[href*="linkedin.com"]::after,
+a[href ="https://github.com/QtinzIa"]::after,
+a[href*="instagram.com"]::after {
+    content: "👉🏻";
+    margin-left: 5px;
+}

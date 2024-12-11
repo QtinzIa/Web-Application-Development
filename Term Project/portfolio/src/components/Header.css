@@ -1,0 +1,56 @@
+.App-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2em 0;
+    background-color: #e0e9f5;
+    color: rgb(44, 111, 255);
+    min-height: 180px;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    position: absolute;
+    left: 35em;
+}
+
+.App-logo {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.header-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1em;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(44, 111, 255);
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffbb00;
+}

@@ -1,0 +1,61 @@
+.resume-container {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(26, 56, 122, 0.658);
+}
+
+.resume-container h1 {
+    font-size: 2em;
+    color: rgb(44, 111, 255);
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.resume-container p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    background-color: rgb(44, 111, 255);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 2em;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.download-button:hover {
+    background-color: rgb(30, 90, 200);
+}
+
+.timeline {
+    border-left: 4px solid rgb(44, 111, 255);
+    padding-left: 1em;
+    margin-top: 2em;
+}
+
+.timeline-item {
+    margin-bottom: 2em;
+    position: relative;
+    padding-left: 1.5em;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(44, 111, 255);
+    border-radius: 50%;
+}
